@@ -15,7 +15,7 @@ public class Twitter {
 	private LinkedList<TwitterPoruka> poruke = new LinkedList<TwitterPoruka>();
 	/**
 	 * Metoda vraca sve poruke.
-	 * @return
+	 * @return poruke
 	 */
 	public LinkedList<TwitterPoruka> vratiSvePoruke(){
 			return poruke;
@@ -38,7 +38,7 @@ public class Twitter {
 	 * Ako nije prekoracen maxBroj, i ako je odgovarajuci tag, unosi se u niz.	
 	 * @param maxBroj Maksimalni broj elemenata u nizu.
 	 * @param tag Tag na osnovu koga se trazi u listi.
-	 * @return
+	 * @return rezultat
 	 */
 	public TwitterPoruka[] vratiPoruke(int maxBroj, String tag) {
 			if (tag==null || tag == "")

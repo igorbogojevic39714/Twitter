@@ -15,7 +15,7 @@ public class TwitterPoruka {
 	private String poruka;
 	/**
 	 * Get metoda vraca string korisnik.
-	 * @return
+	 * @return korisnik
 	 */
 	public String getKorisnik() {
 	return korisnik;
@@ -23,6 +23,7 @@ public class TwitterPoruka {
 	/**
 	 * Set metoda, prima parametar korisnik i baca gresku ako je unet prazan ili null string.
 	 * @param korisnik
+	 * @throws RuntimeException
 	 */
 	public void setKorisnik(String korisnik) {
 	if (korisnik==null || korisnik == "")
@@ -31,7 +32,7 @@ public class TwitterPoruka {
 	}
 	/**
 	 * Get metoda vraca string sa tekstom poruka.
-	 * @return
+	 * @return poruka
 	 */
 	public String getPoruka() {
 	return poruka;
@@ -40,6 +41,7 @@ public class TwitterPoruka {
 	 * Set metoda, prima parametar poruka i baca gresku ako je unet null 
 	 * ili string veci od 140.
 	 * @param poruka
+	 * @throws RuntimeException
 	 */
 	public void setPoruka(String poruka) {
 	if (poruka==null || poruka.length()>140)
