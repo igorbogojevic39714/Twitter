@@ -38,7 +38,7 @@ public class TwitterTest {
 		LinkedList<TwitterPoruka> novaLista = new LinkedList<TwitterPoruka>();
 		novaLista.addLast(tp1);
 		novaLista.addLast(tp2);
-		//novaLista = t.vratiSvePoruke();
+		novaLista = t.vratiSvePoruke();
 		assertEquals (  novaLista, t.vratiSvePoruke()  );
 		
 		
@@ -56,7 +56,7 @@ public class TwitterTest {
 		LinkedList<TwitterPoruka> novaLista = new LinkedList<TwitterPoruka>();
 		novaLista.addLast(tp1);
 		
-		//novaLista = t.vratiSvePoruke();
+		novaLista = t.vratiSvePoruke();
 		assertEquals ( novaLista, t.vratiSvePoruke()  );
 		
 	}
