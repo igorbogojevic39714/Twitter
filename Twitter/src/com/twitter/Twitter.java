@@ -3,15 +3,29 @@ package com.twitter;
 import java.util.LinkedList;
 
 import com.twitter.poruke.TwitterPoruka;
-
+/**
+ * Klasa Twitter sadrzi metode i liste poruka.
+ * @author Igor
+ *
+ */
 public class Twitter {
-
-	private LinkedList<TwitterPoruka> poruke =
-			new LinkedList<TwitterPoruka>();
-			public LinkedList<TwitterPoruka> vratiSvePoruke(){
+	/**
+	 * Privatna Lista koja sadrzi poruke
+	 */
+	private LinkedList<TwitterPoruka> poruke = new LinkedList<TwitterPoruka>();
+	/**
+	 * Metoda vraca sve poruke.
+	 * @return
+	 */
+	public LinkedList<TwitterPoruka> vratiSvePoruke(){
 			return poruke;
 			}
-			public void unesi(String korisnik, String poruka) {
+	/**
+	 * Metoda prima dva stringa u parametru. Kreira novi objekat i zatim unosi u listu na kraj.
+	 * @param korisnik
+	 * @param poruka
+	 */
+	public void unesi(String korisnik, String poruka) {
 			//Pravi se nova poruka i puni podacima.
 			TwitterPoruka tp = new TwitterPoruka();
 			tp.setKorisnik("korisnik");
@@ -19,7 +33,14 @@ public class Twitter {
 			//Poruka se unosi u listu na kraj
 			poruke.addLast(tp);
 			}
-			public TwitterPoruka[] vratiPoruke(int maxBroj, String tag) {
+	/**
+	 * Metoda vraca poruke koje trazi putem parametra tag.
+	 * Ako nije prekoracen maxBroj, i ako je odgovarajuci tag, unosi se u niz.	
+	 * @param maxBroj Maksimalni broj elemenata u nizu.
+	 * @param tag Tag na osnovu koga se trazi u listi.
+	 * @return
+	 */
+	public TwitterPoruka[] vratiPoruke(int maxBroj, String tag) {
 			if (tag==null || tag == "")
 			throw new RuntimeException("Morate uneti tag");
 			//Ako je maxBroj <=0, vraca maxBroj se postavlja na 100 poruka
