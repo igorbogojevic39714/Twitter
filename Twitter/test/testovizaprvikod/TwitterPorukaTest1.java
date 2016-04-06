@@ -1,3 +1,5 @@
+package testovizaprvikod;
+
 import static org.junit.Assert.*;
 
 import org.junit.After;
@@ -8,7 +10,7 @@ import org.junit.Test;
 
 import com.twitter.poruke.TwitterPoruka;
 
-public class TwitterPorukaTest {
+public class TwitterPorukaTest1 {
 	
 	private TwitterPoruka t;
 	@Before

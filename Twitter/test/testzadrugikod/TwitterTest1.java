@@ -1,3 +1,5 @@
+package testzadrugikod;
+
 import static org.junit.Assert.*;
 
 import java.util.LinkedList;
@@ -11,7 +13,7 @@ import org.junit.Test;
 import com.twitter.Twitter;
 import com.twitter.poruke.TwitterPoruka;
 
-public class TwitterTest {
+public class TwitterTest1 {
 	Twitter t;
 	TwitterPoruka tp1 = new TwitterPoruka();
 	TwitterPoruka tp2 = new TwitterPoruka();
